@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharanya N | Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Custom Cursor Glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Page Loader -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-content">
+            <div class="spinner"></div>
+            <span>Loading System...</span>
+        </div>
+    </div>
+
+    <!-- Futuristic Tech Background Canvas -->
+    <canvas id="techCanvas" class="tech-canvas"></canvas>
+
+    <!-- Navigation Bar -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="logo" id="navLogo">SN<span>.</span></a>
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <div class="hamburger" id="hamburger" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Container -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero section" id="home">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge-wrapper">
+                        <span class="tech-badge"><i class="fa-solid fa-circle-dot"></i> Available for Opportunities</span>
+                    </div>
+                    <h1 class="hero-title">Hi, I'm <span class="gradient-text" id="heroName">Sharanya N</span></h1>
+                    <h2 class="hero-subtitle">I build <span class="typed-text" id="typedText"></span><span class="cursor">|</span></h2>
+                    <p class="hero-description" id="heroAboutShort">Computer Science Engineering student specializing in IoT, Cybersecurity, and UI/UX design, building intelligent digital solutions.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary ripple-btn">Contact Me <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#" id="resumeBtn" class="btn btn-secondary ripple-btn" target="_blank"></a>
+          </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <div class="glass-card-back"></div>
+                    <div class="profile-frame">
+                        <img src="assets/images/profile.jpg.jpeg" alt="Sharanya N" id="heroProfileImg" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80'">
+                    </div>
+                    <div class="floating-tech-badge badge-1"><i class="fa-solid fa-shield-halved"></i> Cybersecurity</div>
+                    <div class="floating-tech-badge badge-2"><i class="fa-solid fa-pen-nib"></i> UI/UX Design</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">Get to know my background, education, and career vision</p>
+                </div>
+                <div class="about-grid">
+                    <div class="glass-card about-card">
+                        <h3><i class="fa-solidGraduation-cap fa-solid fa-graduation-cap"></i> Education</h3>
+                        <div class="education-info">
+                            <h4 id="eduInstitution">Sri Sairam College of Engineering, Bangalore</h4>
+                            <p class="degree" id="eduDegree">Bachelor of Engineering (B.E.) in Computer Science Engineering</p>
+                            <p class="specialization" id="eduSpec">Specialization: CSE (IoT, Cybersecurity including Blockchain)</p>
+                        </div>
+                    </div>
+                    <div class="glass-card about-card">
+                        <h3><i class="fa-solid fa-briefcase"></i> Experience</h3>
+                        <div class="experience-info" id="experienceContainer">
+                            <!-- Populated dynamically via JS -->
+                        </div>
+                    </div>
+                    <div class="glass-card about-card full-width">
+                        <h3><i class="fa-solid fa-bullseye"></i> Career Objective & Passion</h3>
+                        <p id="careerObjectiveText">Passionate Computer Science professional driven by web development, UI/UX design, and cybersecurity fundamentals. Eager to leverage technical expertise in creating secure, high-performance, and user-centric applications.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills section" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Technical Arsenal</h2>
+                    <p class="section-subtitle">Core competencies, frameworks, and modern tools</p>
+                </div>
+                <div class="skills-grid" id="skillsGrid">
+                    <!-- Populated dynamically via JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects section" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">Innovative solutions engineered with precision</p>
+                </div>
+                <div class="projects-list" id="projectsList">
+                    <!-- Populated dynamically via JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Let's collaborate on your next project or opportunity</p>
+                </div>
+                <div class="contact-grid">
+                    <div class="glass-card contact-info-card">
+                        <h3>Contact Information</h3>
+                        <p>Feel free to reach out through any of the channels below or fill out the form.</p>
+                        <ul class="contact-list">
+                            <li>
+                                <i class="fa-solid fa-phone"></i>
+                                <div>
+                                    <span>Phone</span>
+                                    <a href="#" id="contactPhone">+91-6362813866</a>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                <div>
+                                    <span>Email</span>
+                                    <div class="email-action-wrapper">
+                                        <a href="#" id="contactEmail">sharureddy13@gmail.com</a>
+                                        <button class="copy-btn" id="copyEmailBtn" title="Copy Email"><i class="fa-solid fa-copy"></i></button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <div>
+                                    <span>Location</span>
+                                    <span id="contactLocation">Bangalore, India</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-brands fa-linkedin"></i>
+                                <div>
+                                    <span>LinkedIn</span>
+                                    <a href="#" id="contactLinkedin" target="_blank">linkedin.com/in/sharanya-n-203b7932a</a>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-brands fa-github"></i>
+                                <div>
+                                    <span>GitHub</span>
+                                    <a href="#" id="contactGithub" target="_blank">github.com/Sharanya03-stack</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="glass-card contact-form-card">
+                        <h3>Send a Message</h3>
+                        <form id="contactForm" novalidate>
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" placeholder="John Doe" required>
+                                <span class="error-msg" id="nameError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                                <span class="error-msg" id="emailError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="Project Inquiry" required>
+                                <span class="error-msg" id="subjectError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                                <span class="error-msg" id="messageError"></span>
+                            </div>
+                            <button type="submit" class="btn btn-primary ripple-btn w-100">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+                            <div class="form-success" id="formSuccess">Message sent successfully! I will get back to you soon.</div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <a href="#" class="logo">SN<span>.</span></a>
+                <p id="footerCopyright">&copy; 2026 Sharanya N. All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-socials" id="footerSocials">
+                <!-- Populated via JS -->
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
