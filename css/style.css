@@ -141,7 +141,7 @@ a {
     width: 100vw;
     height: 100vh;
     pointer-events: none;
-    z-index: 1;
+    z-index: 2;
 }
 
 .scroll-progress {
@@ -163,7 +163,7 @@ a {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 3;
     transition: var(--transition);
     padding: 1.2rem 0;
 }
@@ -862,7 +862,7 @@ a {
     border-top: 1px solid var(--card-border);
     padding: 3rem 0;
     position: relative;
-    z-index: 2;
+    z-index: 3;
 }
 
 .footer-content {
@@ -933,7 +933,7 @@ a {
     opacity: 0;
     visibility: hidden;
     transition: var(--transition);
-    z-index: 999;
+    z-index: 3;
 }
 
 .back-to-top.show {
@@ -943,4 +943,34 @@ a {
 
 .back-to-top:hover {
     transform: translateY(-5px);
+}
+/* ==========================================
+   CINEMATIC TECHNICAL VIDEO BACKGROUND
+   ================================---------- */
+.video-bg-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 0; /* Sits right behind your content and canvas layers */
+    overflow: hidden;
+}
+
+#bgVideo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: contrast(120%) brightness(60%);
+    opacity: 0.35; /* Keeps text fully legible while giving a high-end motion feel */
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(3, 4, 7, 0.75) 0%, rgba(3, 4, 7, 0.85) 100%);
 }

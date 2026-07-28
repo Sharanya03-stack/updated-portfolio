@@ -25,7 +25,7 @@ const portfolioData = {
         {
             role: "UI/UX Design Intern",
             company: "Edufyi Tech Solutions",
-            period: "2024 - Present",
+            period: "Aug 2025 - Oct 2025",
             description: [
                 "Designed user-friendly interfaces for web and mobile applications.",
                 "Created wireframes and interactive prototypes using Figma.",
@@ -34,26 +34,30 @@ const portfolioData = {
         }
     ],
 
+    careerObjective:  "Aspiring Full-Stack Developer with a strong interest in building responsive, user-centric web applications. Passionate about creating scalable digital solutions using modern web technologies, AI integration, and intuitive UI/UX design while delivering real-world value through freelance and collaborative projects.",
+    
+
+
     skills: [
         {
             category: "Programming & Core",
             icon: "fa-solid fa-code",
-            items: ["C", "Python", "C++", "Data Structures", "Cybersecurity Fundamentals"]
+            items: ["C", "Python", "C++", "Data Structures", "OOP", "Problem solving"]
         },
         {
             category: "Web & Frameworks",
             icon: "fa-solid fa-laptop-code",
-            items: ["HTML5", "CSS3", "JavaScript (ES6+)", "React", "Node.js", "Express.js", "FastAPI", "Tailwind CSS", "Android Studio"]
+            items: ["HTML5", "CSS3", "JavaScript (ES6+)", "React", "Node.js", "Express.js", "FastAPI", "Tailwind CSS"]
         },
         {
             category: "Database & Cloud",
             icon: "fa-solid fa-database",
-            items: ["MongoDB", "PostgreSQL", "Supabase", "Cloudinary", "Firebase"]
+            items: ["MongoDB", "Vercel", "Supabase", "Cloudinary", "Firebase"]
         },
         {
             category: "Animation & Tools",
             icon: "fa-solid fa-palette",
-            items: ["GSAP", "Chart.js", "AOS", "Figma", "UI/UX Design", "Git", "GitHub", "VS Code", "Orange"]
+            items: ["GSAP", "Wireframing", "AOS", "Figma", "UI/UX Design", "Git", "GitHub", "VS Code", "Orange"]
         }
     ],
 
@@ -63,41 +67,35 @@ const portfolioData = {
             description: "Designed and engineered a multi-page responsive web application featuring a modern SaaS aesthetic and corporate-academic branding. Implemented complex JavaScript animations using GSAP, including ScrollTrigger clip-path reveals, smooth staggered load timelines, and an interactive custom cursor. Embedded dynamic data visualization components using Chart.js to display multi-year placement statistics and interactive recruitment tickers. Optimized UI performance and cross-browser responsiveness while integrating Google Translate API and dynamic interactive layouts.",
             technologies: ["JavaScript (ES6+)", "GSAP", "Tailwind CSS", "HTML5", "Chart.js", "AOS"],
             image: "assets/images/project1.jpg.jpeg",
-            github: "https://github.com/Sharanya03-stack/browser-battle2.0",
-            
+            github: "https://github.com/Sharanya03-stack/browser-battle2.0"
         },
         {
             title: "CI/CD Triage Agent (Intelligent Pipeline Recovery Engine)",
             description: "Built an intelligent CI/CD pipeline failure diagnosis and recovery system designed to streamline DevOps workflows. Automatically executes comprehensive log analysis, pinpoints precise root causes, and categorizes system issues in real-time. Developed an intuitive interactive chatbot interface providing context-aware troubleshooting assistance for developers. Integrated dynamic Chart.js dashboards to visualize critical pipeline performance metrics, build stability trends, and historical failure recovery rates seamlessly across environments.",
             technologies: ["Python", "FastAPI", "JavaScript", "HTML", "CSS", "Chart.js"],
             image: "assets/images/project2.jpeg.jpeg",
-            github: "https://github.com/Sharanya03-stack/AI-agent",
-          
+            github: "https://github.com/Sharanya03-stack/AI-agent"
         },
         {
             title: "Zero Degree Cafe & Brewery",
             description: "Built a high-performance, mobile-responsive web UI using HTML5, Tailwind CSS, and JavaScript, featuring custom Google Fonts for a high-end luxury aesthetic. Integrated an ultra-dark hero layout with dynamic SVG accents, Ken Burns image-zoom CSS keyframe animations, and layered z-index hierarchy for depth. Engineered a real-time shopping bag slider, dynamic menu category filtering, telemetry metric widgets, and interactive table reservation modal forms.",
             technologies: ["HTML5", "Tailwind CSS", "JavaScript"],
             image: "assets/images/project3.jpeg.jpeg",
-            github: "https://github.com/Sharanya03-stack/zero-degree",
-            
+            github: "https://github.com/Sharanya03-stack/zero-degree"
         },
         {
             title: "House Hunt (StayFind Full-Stack Rental Platform)",
             description: "Developed a responsive MERN/Supabase web application featuring role-based authentication for property owners and house hunters. Built robust Express.js backend services with JWT authentication, custom middleware, and modular routing to handle user profiles and listings. Managed data persistence with Supabase/PostgreSQL and integrated Cloudinary for image asset uploads. Designed a high-performance React UI using Tailwind CSS, Axios interceptors, and custom React Context hooks for application state management.",
             technologies: ["React", "Node.js", "Express.js", "Supabase", "PostgreSQL", "Tailwind CSS"],
             image: "assets/images/project4.jpeg.jpeg",
-            github: "https://github.com/Sharanya03-stack/house-hunt1.0",
-            
+            github: "https://github.com/Sharanya03-stack/house-hunt1.0"
         },
         {
             title: "Skill Sync Student Industry Readiness Platform",
             description: "Developed a comprehensive platform engineered to help students align their technical skill sets directly with fast-evolving industry requirements. Implemented advanced skill-gap analysis algorithms that map current student proficiencies against emerging market tech stacks. Delivered customized technology learning recommendations and structured roadmaps for career development. Designed highly intuitive user interfaces with strong focus on accessibility, ease of navigation, and a fluid user experience.",
             technologies: ["Web Technologies", "UI/UX Design", "JavaScript", "CSS"],
             image: "assets/images/project5.jpeg.jpeg",
-            github: "https://github.com/Sharanya03-stack",
-            
-        },
-        
+            github: "https://github.com/Sharanya03-stack"
+        }
     ]
 };
