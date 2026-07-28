@@ -67,7 +67,7 @@ const portfolioData = {
             description: "Designed and engineered a multi-page responsive web application featuring a modern SaaS aesthetic and corporate-academic branding. Implemented complex JavaScript animations using GSAP, including ScrollTrigger clip-path reveals, smooth staggered load timelines, and an interactive custom cursor. Embedded dynamic data visualization components using Chart.js to display multi-year placement statistics and interactive recruitment tickers. Optimized UI performance and cross-browser responsiveness while integrating Google Translate API and dynamic interactive layouts.",
             technologies: ["JavaScript (ES6+)", "GSAP", "Tailwind CSS", "HTML5", "Chart.js", "AOS"],
             image: "assets/images/project1.jpg.jpeg",
-            github: "https://github.com/Sharanya03-stack/browser-battle2.0"
+            github:"https://github.com/Sharanya03-stack/browser-battle"
         },
         {
             title: "CI/CD Triage Agent (Intelligent Pipeline Recovery Engine)",
