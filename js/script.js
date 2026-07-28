@@ -402,3 +402,55 @@ window.toggleProjectDesc = function(index) {
         button.textContent = "Read More";
     }
 };
+/* ==========================================
+   DYNAMIC BACKGROUND BUBBLE GENERATOR
+   ========================================== */
+document.addEventListener("DOMContentLoaded", () => {
+    const bubbleCount = 15; // Number of floating bubbles on screen
+    const body = document.body;
+
+    for (let i = 0; i < bubbleCount; i++) {
+        const bubble = document.createElement("div");
+        bubble.classList.add("floating-bubble");
+        
+        // Randomize size, starting horizontal position, and animation duration/delay
+        const size = Math.random() * 60 + 20; // between 20px and 80px
+        bubble.style.width = `${size}px`;
+        bubble.style.height = `${size}px`;
+        bubble.style.left = `${Math.random() * 100}vw`;
+        bubble.style.animationDuration = `${Math.random() * 8 + 6}s`; // 6s to 14s
+        bubble.style.animationDelay = `${Math.random() * 5}s`;
+
+        body.appendChild(bubble);
+    }
+});
+/* ==========================================
+   DARK BUBBLE BACKGROUND GENERATOR
+   ========================================== */
+document.addEventListener("DOMContentLoaded", () => {
+    let container = document.getElementById("bubble-background-container");
+    if (!container) {
+        container = document.createElement("div");
+        container.id = "bubble-background-container";
+        document.body.prepend(container);
+    } else {
+        container.innerHTML = ""; // Clear any duplicate instances
+    }
+
+    const bubbleCount = 30;
+
+    for (let i = 0; i < bubbleCount; i++) {
+        const bubble = document.createElement("div");
+        bubble.classList.add("dark-bubble");
+        
+        // Small, crisp bubble sizes (12px to 28px)
+        const size = Math.random() * 16 + 12;
+        bubble.style.width = `${size}px`;
+        bubble.style.height = `${size}px`;
+        bubble.style.left = `${Math.random() * 100}vw`;
+        bubble.style.animationDuration = `${Math.random() * 6 + 5}s`;
+        bubble.style.animationDelay = `${Math.random() * 5}s`;
+
+        container.appendChild(bubble);
+    }
+});
